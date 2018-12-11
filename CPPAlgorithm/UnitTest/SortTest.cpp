@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <ctime>
 
-#include "timer.h"
+#include "../include/timer.h"
 #include "../Sort/Sort.h"
 
 #define LONG_TEST 100000

@@ -32,4 +32,12 @@
 *.app
 
 *.pdb
-
+*.opendb
+*.sdf
+*.sln
+ipch
+*.tlog
+*.lastbuildstate
+*.log
+*.idb
+*.ilk
