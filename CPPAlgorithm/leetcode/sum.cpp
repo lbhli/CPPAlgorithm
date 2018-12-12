@@ -96,3 +96,22 @@ vector<vector<int>> threeSum(vector<int> &num)
     }
     return result;
 }
+
+vector<int> twoSum(vector<int>& nums, int target)
+{
+	vector<int> vResult;
+	int nSize = static_cast<int>(nums.size());
+	for (int i = 0; i < nSize - 1; ++i)
+	{
+		for (int j = i + 1; j < nSize; ++j)
+		{
+			if ((nums[i] + nums[j]) == target)
+			{
+				vResult.push_back(i);
+				vResult.push_back(j);
+				return vResult;
+			}
+		}
+	}
+	return vResult;
+}

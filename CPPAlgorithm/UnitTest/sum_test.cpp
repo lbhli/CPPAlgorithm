@@ -36,7 +36,33 @@ void sum_test::TestMain()
         }
         std::cout << std::endl;
     }
+	vector<int> testdate1({ 1, 2, 6, 4, 5, 16, 8, 7 });
 
+	vector<int> vResult = twoSum(testdate1, 8);
+	vector<int> vExpect({ 0,7 });
+	ASSERT_T(CompareVector(vResult,vExpect));	
+}
+
+
+bool sum_test::CompareVector(vector<int>& result, vector<int>& expectation)
+{
+	int nSize1 = static_cast<int>(result.size());
+	int nSize2 = static_cast<int>(expectation.size());
+
+	if (nSize1 != nSize2)
+	{
+		return false;
+	}
+
+	for (int i = 0; i < nSize1; ++i)
+	{
+		if (result[i] != expectation[i])
+		{
+			return false;
+		}
+	}
+
+	return true;
 }
 
 bool sum_test::CompareVector(vector<vector<int>>& result,

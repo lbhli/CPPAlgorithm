@@ -14,7 +14,7 @@ public:
 
 private:
     bool CompareVector(vector<vector<int>>& result, vector<vector<int>>& expectation);
-    
+    bool CompareVector(vector<int>& result, vector<int>& expectation);
 private:
     static sum_test m_self;
 };
