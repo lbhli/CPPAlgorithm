@@ -54,5 +54,17 @@ void addString_test::TestMain()
     strResult = addStrings(str1, str2);
     //std::cout << strResult << std::endl;
     ASSERT_T(strResult.compare(strExpect) == 0 );
+
+    // Test: Random test2
+    srand((int)time(0));
+    nValue1 = rand();
+    nValue2 = rand();
+    str1 = std::to_string(nValue1);
+    str2 = std::to_string(nValue2);
+    strExpect = std::to_string(nValue1 + nValue2);
+
+    strResult = addStrings(str1, str2);
+    //std::cout << strResult << std::endl;
+    ASSERT_T(strResult.compare(strExpect) == 0);
     
 }
