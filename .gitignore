@@ -41,3 +41,5 @@ ipch
 *.log
 *.idb
 *.ilk
+*.filters
+*.vcxproj
