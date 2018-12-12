@@ -43,3 +43,6 @@ ipch
 *.ilk
 *.filters
 *.vcxproj
+*.suo
+
+
